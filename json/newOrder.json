@@ -1,0 +1,25 @@
+
+{
+  
+  "orderId": 8,
+
+  "modifiedDate": "02-03-2017",
+ 
+ "totalPrice": 1400.00,
+
+  "creationDate": "02-03-2017",
+  
+"orderStatus": "completed",
+ 
+ "lineItem": [
+	{
+      "lineItemId": 1,	
+      "itemNo": 1,
+      "itemName": "shirts",
+      "quantity": 4,
+      "unitPrice": 350.00,
+      "itemPrice": 1400.00
+} 
+ ]
+
+} 

@@ -1,0 +1,51 @@
+{
+  "name": "px-alert-message",
+  "version": "0.8.4",
+  "main": [
+    "px-alert-message.html"
+  ],
+  "ignore": [
+    ".*",
+    "node_modules",
+    "bower_components",
+    "sass",
+    "HISTORY.md",
+    "CONTRIBUTING.md",
+    "OSS_Notice.pdf",
+    "scripts",
+    ".github",
+    ".editorconfig",
+    ".jshintrc",
+    ".gitignore",
+    "LICENSE.md",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "README.md",
+    "wct.conf.json",
+    "px-alert-message.png"
+  ],
+  "dependencies": {
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#~1.0.3",
+    "polymer": "^1.6.1",
+    "px-theme": "^2.0.1",
+    "px-buttons-design": "^1.1.0",
+    "px-actionable-text-icons": "^1.1.3",
+    "px-meta-buttons-design": "^0.6.0",
+    "polymer-font-awesome": "px-polymer-font-awesome#^0.1.9"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^0.7.0",
+    "px-demo": "^1.0.0"
+  },
+  "homepage": "https://github.com/PredixDev/px-alert-message",
+  "_release": "0.8.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.8.4",
+    "commit": "eaa2888243e6bc8f7cc4775927a4f16eb57ece8a"
+  },
+  "_source": "https://github.com/PredixDev/px-alert-message.git",
+  "_target": "^0.8.4",
+  "_originalSource": "px-alert-message",
+  "_direct": true
+}

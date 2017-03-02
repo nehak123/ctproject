@@ -1,0 +1,22 @@
+<div ng-controller="addOrderController">
+	
+	<h2>Add New Order</h2>
+	<div ng-show="isOrderCreated == 1">
+     New Order ID {{newOrderData.orderId}} is created.
+  	</div>
+	<form is="iron-form" id="form" method="post" action="">
+		<paper-input name="name" ngDefaultControl ng-model="itemNo" label="Item Number" always-float-label placeholder="" required auto-validate pattern="[0-9]*" error-message="Invalid Inputs! Please enter Item number only!" char-counter maxlength="3"></paper-input>
+		<paper-dropdown-menu label="Item Name" always-float-label placeholder="" required ng-model="itemName">
+		  <paper-listbox class="dropdown-content" selected="1">
+		    <paper-item>Shirts</paper-item>
+		    <paper-item>TShirts</paper-item>
+		    <paper-item>Jeans</paper-item>
+		    <paper-item>Trousers</paper-item>
+		  </paper-listbox>
+		</paper-dropdown-menu>
+		<paper-input name="name" label="Quantity" always-float-label placeholder="" required auto-validate pattern="[0-9]*" error-message="Invalid Inputs! Please enter quantity here!" ng-model="lineItem.quantity"></paper-input>
+		<paper-input name="name" label="Price per unit" always-float-label placeholder="" required auto-validate pattern="[0-9.]*" error-message="Invalid Inputs! Please enter price here!" ng-model="lineItem.unitPrice"><div prefix></div></paper-input>
+		<paper-button raised class="indigo" ng-click="submitAnItem()">Add another item</paper-button>
+		<paper-button raised class="indigo" ng-click="submitAnOrder(lineItem)">Submit Order</paper-button>
+	</form>
+</div>

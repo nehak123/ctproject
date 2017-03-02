@@ -1,0 +1,40 @@
+<div ng-controller="showOrderController">
+  <h2>Get order details here:</h2>
+  <px-card chevron="true" header-text="Card" icon="fa-fort-awesome">
+      Enter Order ID:<input type="text" ng-model="orderid"/>
+      <button id='btn1' ng-click="getOrderDetails(orderid)">Get Items</button>
+  </px-card>
+  <div ng-show="isOrderAvailable == 0">
+    Order Id not available.
+  </div>
+  <div ng-show="isOrderAvailable == 1">
+    <h3>Order Details</h3>
+      Order ID : {{productdata.orderId}} <br>
+      Order Status : {{productdata.orderStatus}}<br>
+      Creation Date : {{productdata.creationDate}}<br>
+      Last Modified Date : {{productdata.modifiedDate}}<br>  
+      Total Order Price : {{productdata.totalPrice}}<br>
+      <px-card chevron="true" header-text="Card" icon="fa-fort-awesome">
+        <px-data-table id="mytable" striped filterable hide-pagination-control enable-column-resizing enable-column-reorder selectable table-data="{{productdata.lineItem}}">
+          <px-data-table-column name="lineItemId" filterable sortable>
+          </px-data-table-column>
+          <px-data-table-column name="itemNo" filterable editable sortable>
+          </px-data-table-column>
+          <px-data-table-column name="itemName" filterable editable sortable>
+          </px-data-table-column>
+          <px-data-table-column name="quantity" editable sortable>
+          </px-data-table-column>
+          <px-data-table-column name="unitPrice" editable sortable>
+          </px-data-table-column>
+          <px-data-table-column name="itemPrice" sortable>
+          </px-data-table-column>
+        </px-data-table>
+        <input type="button" value="Delete Items" ng-click="deleteOrderDetails(orderid)"/>
+        <input type="button" value="Update Items" ng-click="updateOrderDetails(orderid)"/>
+      </px-card>
+  </div>
+  
+</div>
+
+
+

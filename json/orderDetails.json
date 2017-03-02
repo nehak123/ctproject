@@ -1,0 +1,25 @@
+{
+  "orderId": 8,
+  "modifiedDate": "02-03-2017",
+  "totalPrice": 1400.00,
+  "creationDate": "02-03-2017",
+  "orderStatus": "completed",
+  "lineItem": [
+    {
+      "lineItemId": 11,
+      "itemNo": 1,
+      "itemName": "shirts",
+      "quantity": 4,
+      "unitPrice": 350,
+      "itemPrice": 1400
+    },
+    {
+      "lineItemId": 12,
+      "itemNo": 2,
+      "itemName": "Jeans",
+      "quantity": 10,
+      "unitPrice": 750,
+      "itemPrice": 7500
+    }
+  ]
+} 

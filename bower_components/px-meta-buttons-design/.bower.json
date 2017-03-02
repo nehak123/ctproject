@@ -1,0 +1,47 @@
+{
+  "name": "px-meta-buttons-design",
+  "version": "0.6.4",
+  "authors": [
+    "General Electric"
+  ],
+  "description": "Shortcut collection of button modules for Predix UI",
+  "main": "_meta.buttons.scss",
+  "keywords": [
+    "px",
+    "sass",
+    "buttons"
+  ],
+  "homepage": "https://github.com/PredixDev/px-meta-buttons-design.git",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "sass",
+    "*.md",
+    "scripts",
+    "github",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "wct.conf.json",
+    "test",
+    "OSS_Notice.pdf"
+  ],
+  "dependencies": {
+    "px-button-group-design": "^1.0.3",
+    "px-buttons-design": "^1.1.0"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^0.7.0",
+    "px-sass-doc": "^0.4.2"
+  },
+  "_release": "0.6.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.6.4",
+    "commit": "f5a53f2d34587db811b98f52fc7b3e100baabb03"
+  },
+  "_source": "https://github.com/predixDev/px-meta-buttons-design.git",
+  "_target": "^0.6.0",
+  "_originalSource": "px-meta-buttons-design"
+}
