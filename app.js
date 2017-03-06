@@ -1,5 +1,6 @@
 
-var app = angular.module('app', []);
+
+var app = angular.module('app', ['ngRoute']);
 
 app.config(['$routeProvider',
   function($routeProvider) {
@@ -12,4 +13,5 @@ app.config(['$routeProvider',
 	                            
       .otherwise({ redirectTo: '/ShowOrders' });
 }]);
+
 
