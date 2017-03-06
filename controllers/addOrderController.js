@@ -19,13 +19,4 @@ app.controller('addOrderController', ['$scope','$http', function($scope, $http) 
         }); 
 	} 
 
-
-	function onViewOrder(){
-		alert("inside onViewOrder");
-	};
-
-	function addAnotherItem(){
-		alert("inside addAnotherItem");
-	};
-
 }]);
