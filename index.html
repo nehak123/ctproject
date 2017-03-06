@@ -3,25 +3,28 @@
 
 <head>
   <title>Order Management System</title>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-mocks/angular-mocks.js"></script> 
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script> 
   <script src="app.js"></script>
   <link href="main.scss" rel="stylesheet">
   <script src="controllers/addOrderController.js"></script>
   <script src="controllers/showOrderController.js"></script>
-  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script> 
   <link rel="import" href="bower_components/polymer/polymer.html">
   <link rel="import" href="bower_components/px-data-table/px-data-table.html"/>
   <link rel="import" href="bower_components/px-data-table/font-awesome/fonts/fontawesome-webfont.woff"/>
   <link rel="import" href="bower_components/px-theme/px-theme-styles.html">
   <style include="px-theme-styles" is="custom-style"></style>
-  <link href="px-popover/px-popover.html" rel="import">
   <link href="bower_components/iron-form/iron-form.html" rel="import">
   <link href="bower_components/px-alert-message/px-alert-message.html" rel="import">
+  <link href="bower_components/px-modal/px-modal.html" rel="import">
   <link href="bower_components/paper-input/paper-input.html" rel="import">
   <link href="bower_components/paper-item/paper-item.html" rel="import">
   <link href="bower_components/paper-listbox/paper-listbox.html" rel="import">
   <link href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html" rel="import">
   <link href="bower_components/paper-button/paper-button.html" rel="import">
+  <link rel="import" href="html/my-form.html"></link>
   <style is="custom-style">
   #container {
     display: flex;
@@ -44,6 +47,16 @@
       color: white !important;
     };
   }
+
+  paper-button.grey {
+    background-color: var(--paper-cyan-500);
+    color: white;
+    --paper-button-raised-keyboard-focus: {
+      background-color: var(--paper-pink-a200) !important;
+      color: white !important;
+    };
+  }
+
   paper-button.indigo:hover {
     background-color: var(--paper-indigo-400);
   }
@@ -56,8 +69,10 @@
 <body ng-app="app">
   <a href="#AddNewOrder"> Add New Order</a>
   <a href="#ShowOrders"> Show Order </a>
+
   <div ng-view></div>
 
 </body>
 
 </html>
+
